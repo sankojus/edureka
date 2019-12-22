@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('step1') {
       steps {
-        sh 'echo "first step1"'
+        sh 'echo "this is my first step $user "'
       }
     }
 
     stage('stage2') {
       steps {
-        sh '''echo "hello"
+        sh '''echo "hello $user"
 '''
       }
     }
