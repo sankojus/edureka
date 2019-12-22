@@ -1,3 +1,4 @@
+user = $user
 pipeline {
   agent { label docker }
   stages {
