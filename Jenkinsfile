@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'docker' }
+  agent { docker 'busybox:latest' }
   stages {
     stage('step1') {
       steps {
