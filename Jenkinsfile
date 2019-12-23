@@ -3,7 +3,12 @@ pipeline {
   stages {
     stage('step1') {
       steps {
-        sh 'echo "first step1"'
+        sh ''' 
+        pwd
+        cd $workspace/
+        pwd
+        docker build -t takacsmark/alpine-smarter:1.0 .
+        '''
       }
     }
 
