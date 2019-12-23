@@ -1,9 +1,9 @@
 pipeline {
-  agent { label 'docker' }
+  agent any
   stages {
     stage('step1') {
       steps {
-        sh 'echo "this is my first step "'
+        sh 'echo "first step1"'
       }
     }
 
