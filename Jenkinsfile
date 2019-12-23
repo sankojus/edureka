@@ -7,8 +7,8 @@ pipeline {
         pwd
         ls -lrth
         cd $workspace/
-        pwd
-        docker build -t takacsmark/alpine-smarter:1.0 .
+        cd /home/ec2-user/jenkins_home/workspace/pipeline1/
+        docker build -t takacsmark/alpine-smarter:1.0 
         '''
       }
     }
