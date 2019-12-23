@@ -1,10 +1,11 @@
 pipeline {
-  agent any
+  agent { label 'docker'}
   stages {
     stage('step1') {
       steps {
         sh ''' 
         pwd
+        ls -lrth
         cd $workspace/
         pwd
         docker build -t takacsmark/alpine-smarter:1.0 .
