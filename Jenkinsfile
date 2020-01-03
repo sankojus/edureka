@@ -6,8 +6,7 @@ pipeline {
         sh ''' 
         pwd
         ls -lrth
-        cd $workspace/src
-        docker build -t takacsmark/alpine-smarter:1.0 
+        
         '''
       }
     }
