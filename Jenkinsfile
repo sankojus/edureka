@@ -17,6 +17,13 @@ pipeline {
 '''
       }
     }
+    stage('satge3') {
+    steps{
+      sh '''
+      echo my first pipeline is success
+'''
+    }
+    }
 
   }
 }
